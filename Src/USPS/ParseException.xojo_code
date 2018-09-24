@@ -1,5 +1,5 @@
 #tag Class
-Protected Class CredentialException
+Protected Class ParseException
 Inherits Runtimeexception
 End Class
 #tag EndClass

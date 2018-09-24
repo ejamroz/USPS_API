@@ -1,18 +1,5 @@
-#tag Class
-Protected Class Request
-	#tag Method, Flags = &h21
-		Private Sub constructor()
-		  
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
-		Function getData() As string
-		  return ""
-		End Function
-	#tag EndMethod
-
-
+#tag Module
+Protected Module USPS
 	#tag ViewBehavior
 		#tag ViewProperty
 			Name="Index"
@@ -48,5 +35,5 @@ Protected Class Request
 			Type="Integer"
 		#tag EndViewProperty
 	#tag EndViewBehavior
-End Class
-#tag EndClass
+End Module
+#tag EndModule

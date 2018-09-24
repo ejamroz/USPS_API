@@ -1,12 +1,28 @@
-#tag Class
-Protected Class Credentials
-	#tag Property, Flags = &h0
-		password As string
-	#tag EndProperty
+#tag Interface
+Protected Interface Request
+	#tag Method, Flags = &h0
+		Function getAPIName() As Text
+		  
+		End Function
+	#tag EndMethod
 
-	#tag Property, Flags = &h0
-		userID As string
-	#tag EndProperty
+	#tag Method, Flags = &h0
+		Function getName() As Text
+		  
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function getResponseParser() As USPS.Parser
+		  
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function toXML(generator as XmlDocument) As XmlNode
+		  
+		End Function
+	#tag EndMethod
 
 
 	#tag ViewBehavior
@@ -44,5 +60,5 @@ Protected Class Credentials
 			Type="Integer"
 		#tag EndViewProperty
 	#tag EndViewBehavior
-End Class
-#tag EndClass
+End Interface
+#tag EndInterface
